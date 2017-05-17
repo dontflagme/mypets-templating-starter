@@ -46,5 +46,15 @@
         </repeat>
       </repeat>
       </ul>
+      
+      <h3>Message</h3>
+      <check if="{{@preferredCustomer}}">
+            <strong>Thank you for being a preferred customer!</strong><br>
+      </check>
+      
+      <check if="{{@lastLogin > strtotime('-1 month')}}">
+        <true>Welcome back!</true>
+        <false>It's been a while</false>
+      </check>
     </body>
 </html>
