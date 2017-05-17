@@ -52,5 +52,9 @@
         Welcome back!
         <?php else: ?>It's been a while
       <?php endif; ?>
+      
+      <h2>My pet</h2>
+      <p><?= $myPet->getName() ?></p>
+      <p><?= $myPet->getColor() ?></p>
     </body>
 </html>
